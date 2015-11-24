@@ -4,7 +4,7 @@
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
-node.default[:motd][:managed] = true
+node.default['motd']['managed'] = true
 
 file '/etc/motd' do
   content <<-EOF
