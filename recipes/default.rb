@@ -6,7 +6,7 @@
 
 node.default[:motd][:managed] = true
 
-file "/etc/motd" do
+file '/etc/motd' do
   content <<-EOF
     This is a Chef Managed System.  Please think twice about logging in!
     EOF
