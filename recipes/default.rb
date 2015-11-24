@@ -12,5 +12,3 @@ file '/etc/motd' do
     EOF
   only_if { node['motd']['managed'] }
 end
-
-include_recipe 'tdd-demo::production'
