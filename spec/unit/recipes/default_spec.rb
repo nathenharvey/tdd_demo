@@ -19,7 +19,9 @@ describe 'tdd-demo::default' do
 
     it 'creates the motd' do
       expect(chef_run).to create_file('/etc/motd')
-      expect(chef_run).to render_file('/etc/motd').with_content(/Chef Managed System/)
+      expect(chef_run).to(
+        render_file('/etc/motd').with_content(/Chef Managed System/)
+      )
     end
   end
 
@@ -33,7 +35,9 @@ describe 'tdd-demo::default' do
 
     it 'creates the motd' do
       expect(chef_run).to create_file('/etc/motd')
-      expect(chef_run).to render_file('/etc/motd').with_content(/Chef Managed System/)
+      expect(chef_run).to(
+        render_file('/etc/motd').with_content(/Chef Managed System/)
+      )
     end
   end
 end
